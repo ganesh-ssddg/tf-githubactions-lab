@@ -1,6 +1,6 @@
 
 
-name: Az-RG-Deploy
+name: Az-Deploy
 
 jobs:
   deploy:
@@ -12,7 +12,7 @@ jobs:
         with:
           creds: ${{ secrets.AZ_SSDDG54AB_UCVS }}
 
-      - name: Checkout Code
+      - name: Checkout TF Code
         uses: azure/checkout@v2
 
       - name: Deploy Terraform Configuration File
